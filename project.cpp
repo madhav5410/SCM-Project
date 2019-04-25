@@ -379,4 +379,35 @@ cout<<"Enter Customer Name: ";
 cin>>pname;
 hm.searchCustomer(pname);
 }
+break
+;
+
+
+
+case 5:
+if(count==0)
+{
+cout<<"\nRooms are not available.\nPlease add the rooms first.";
+getch();
+}
+else
+{
+cout<<"Enter Room Number : ";
+cin>>rno;
+hm.checkOut(rno);
+}
 break;
+case 6:
+hm.guestSummaryReport();
+break;
+case 7:
+cout<<"\nTHANK YOU! FOR USING SOFTWARE";
+break;
+default:
+cout<<"\nPlease Enter correct option";
+break;
+}
+}while(opt!=7);
+
+getch();
+}
