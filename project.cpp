@@ -132,3 +132,27 @@ cout<<"\n---------------------------------------";
 
 getch();
 }
+//hotel management reservation of room
+void HotelMgnt::checkIn()
+{
+int i,found=0,rno;
+
+class Room room;
+cout<<"\nEnter Room number : ";
+cin>>rno;
+for(i=0;i<count;i++)
+{
+if(rooms[i].roomNumber==rno)
+{
+found=1;
+break;
+}
+}
+if(found==1)
+{
+if(rooms[i].status==1)
+{
+cout<<"\nRoom is already Booked";
+getch();
+return;
+}
