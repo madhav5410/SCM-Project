@@ -155,4 +155,33 @@ if(rooms[i].status==1)
 cout<<"\nRoom is already Booked";
 getch();
 return;
+cout<<"\nEnter booking id: ";
+cin>>rooms[i].cust.booking_id;
+
+cout<<"\nEnter Customer Name (First Name): ";
+cin>>rooms[i].cust.name;
+
+cout<<"\nEnter Address (only city): ";
+cin>>rooms[i].cust.address;
+
+cout<<"\nEnter Phone: ";
+cin>>rooms[i].cust.phone;
+
+cout<<"\nEnter From Date: ";
+cin>>rooms[i].cust.from_date;
+
+cout<<"\nEnter to  Date: ";
+cin>>rooms[i].cust.to_date;
+
+
+cout<<"\nEnter Advance Payment: ";
+cin>>rooms[i].cust.payment_advance;
+
+rooms[i].status=1;
+
+cout<<"\n Customer Checked-in Successfully..";
+getch();
+}
+}
+
 }
