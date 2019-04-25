@@ -18,3 +18,21 @@ char to_date[20];
 float payment_advance;
 int booking_id;
 };
+
+class Room
+{
+public:
+char type;
+char stype;
+char ac;
+int roomNumber;
+int rent;
+int status;
+
+class Customer cust;
+class Room addRoom(int);
+void searchRoom(int);
+void deleteRoom(int);
+void displayRoom(Room);
+};
+
