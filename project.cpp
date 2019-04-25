@@ -356,4 +356,27 @@ getch();
 }
 else
 hm.checkIn();
+break
+;
+case 3:
+if(count==0)
+{
+cout<<"\nRooms data is not available.\nPlease add the rooms first.";
+getch();
+}
+else
+hm.getAvailRoom();
+break;
+case 4:
+if(count==0)
+{
+cout<<"\nRooms are not available.\nPlease add the rooms first.";
+getch();
+}
+else
+{
+cout<<"Enter Customer Name: ";
+cin>>pname;
+hm.searchCustomer(pname);
+}
 break;
