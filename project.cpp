@@ -36,3 +36,27 @@ void deleteRoom(int);
 void displayRoom(Room);
 };
 
+//Global Declarations
+class Room rooms[max];
+int count=0;
+
+
+Room Room::addRoom(int rno)
+{
+class Room room;
+room.roomNumber=rno;
+cout<<"\nType AC/Non-AC (A/N) : ";
+cin>>room.ac;
+cout<<"\nType Comfort (S/N) : ";
+cin>>room.type;
+cout<<"\nType Size (B/S) : ";
+cin>>room.stype;
+cout<<"\nDaily Rent : ";
+cin>>room.rent;
+room.status=0;
+
+cout<<"\n Room Added Successfully!";
+getch();
+return room;
+}
+
